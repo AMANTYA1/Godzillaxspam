@@ -1,1 +1,1 @@
-Godfather: python -m Godfather
+KIGO: python -m KIGO
