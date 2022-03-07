@@ -4,12 +4,12 @@ import sys
 import git
 import heroku3
 # Changed root to Godfather
-from Godfather import BOT0, BOT1, BOT2, BOT3, BOT4, BOT5, BOT6, BOT7, BOT8, BOT9
-from Godfather import OWNER_ID, SUDO_USERS, HEROKU_APP_NAME, HEROKU_API_KEY, deadlyversion
-from Godfather import CMD_HNDLR as hl
+from KIGO import BOT0, BOT1, BOT2, BOT3, BOT4, BOT5, BOT6, BOT7, BOT8, BOT9
+from KIGO import OWNER_ID, SUDO_USERS, HEROKU_APP_NAME, HEROKU_API_KEY, deadlyversion
+from KIGO import CMD_HNDLR as hl
 from telethon.tl.functions.users import GetFullUserRequest
 # alive Pic By Default It's Will Show Our
-from Godfather import ALIVE_PIC
+from KIGO import ALIVE_PIC
 from telethon import events, version, Button
 from telethon.tl.custom import button
 from time import time
