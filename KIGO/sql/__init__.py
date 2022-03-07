@@ -5,7 +5,7 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import scoped_session, sessionmaker
 
 # Use Elephant Sql For Better Experience
-from Godfather import DB_URI
+from KIGO import DB_URI
 
 
 def start() -> scoped_session:
