@@ -36,7 +36,7 @@ async def help(event):
                                   caption=ZAID_Help,
                                   buttons=[
         [
-        Button.url("ᴄʜᴀɴɴᴇʟ", "https://t.me/godzilla_chatting")
+        Button.url("ᴏᴍғᴏ", "https://t.me/godzilla_chatting")
         ] 
         ]
         )                                                         
