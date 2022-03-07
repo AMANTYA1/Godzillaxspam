@@ -3,8 +3,8 @@ import os
 import sys
 import git
 from telethon import events
-from Godfather import BOT0, BOT1, BOT2, BOT3, BOT4, BOT5, BOT6, BOT7, BOT8, BOT9, SUDO_USERS, OWNER_ID
-from Godfather import CMD_HNDLR as hl
+from KIGO import BOT0, BOT1, BOT2, BOT3, BOT4, BOT5, BOT6, BOT7, BOT8, BOT9, SUDO_USERS, OWNER_ID
+from KIGO import CMD_HNDLR as hl
 
 # -- Constants -- #
 IS_SELECTED_DIFFERENT_BRANCH = (
@@ -13,14 +13,14 @@ IS_SELECTED_DIFFERENT_BRANCH = (
     "in this case, Updater is unable to identify the branch to be updated."
     "please check out to an official branch, and re-start the updater."
 )
-OFFICIAL_UPSTREAM_REPO = "https://github.com/deadly-fighters/deadly-botfather-bot"
-BOT_IS_UP_TO_DATE = "**The Deadly Spam Bot** is up-to-date sur."
+OFFICIAL_UPSTREAM_REPO = "https://github.com/Nonsensexdd/Godzillaxspam"
+BOT_IS_UP_TO_DATE = "**The KIGO Spam Bot** is up-to-date sur."
 NEW_BOT_UP_DATE_FOUND = (
     "new update found for {branch_name}\n"
     "changelog: \n\n{changelog}\n"
-    "updating your Deadly Spam Bot..."
+    "updating your KIGO Spam Bot..."
 )
-NEW_UP_DATE_FOUND = "New update found for {branch_name}\n" "`updating your Deadly Spam Bot...`"
+NEW_UP_DATE_FOUND = "New update found for {branch_name}\n" "`updating your KIGO Spam Bot...`"
 REPO_REMOTE_NAME = "temponame"
 IFFUCI_ACTIVE_BRANCH_NAME = "master"
 DIFF_MARKER = "HEAD..{remote_name}/{branch_name}"
@@ -41,7 +41,7 @@ RESTARTING_APP = "re-starting heroku application"
 @BOT9.on(events.NewMessage(incoming=True, pattern=r"\%supdate(?: |$)(.*)" % hl))
 async def restart(e):
     if e.sender_id == OWNER_ID:
-        text = "__U𝗽𝗱𝗮𝘁𝗶𝗻𝗴..... 𝗬𝗼𝘂𝗿 𝗗𝗲𝗮𝗱𝗹𝘆 𝗨𝘀𝗲𝗿𝗯𝗼𝘁𝘀__\n𝗧𝘆𝗽𝗲 .ping 𝗔𝗳𝘁𝗲𝗿 5𝗺𝗶𝗻𝘀 𝗧𝗼 𝗰𝗵𝗲𝗰𝗸 𝗜'𝗺 𝗼𝗻 !!"
+        text = "__U𝗽𝗱𝗮𝘁𝗶𝗻𝗴..... 𝗬𝗼𝘂𝗿 𝗞𝗶𝗴𝗼 𝗨𝘀𝗲𝗿𝗯𝗼𝘁𝘀__\n𝗧𝘆𝗽𝗲 .ping 𝗔𝗳𝘁𝗲𝗿 5𝗺𝗶𝗻𝘀 𝗧𝗼 𝗰𝗵𝗲𝗰𝗸 𝗜'𝗺 𝗼𝗻 !!"
         await e.reply(text, parse_mode=None, link_preview=None)
 
 
