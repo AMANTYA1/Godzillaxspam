@@ -5,7 +5,7 @@ import sys
 from sys import argv
 import glob
 from pathlib import Path
-from Godfather.utils import load_plugins
+from KIGO.utils import load_plugins
 import logging
 from telethon import events
 from . import BOT0, BOT1, BOT2, BOT3, BOT4, BOT5, BOT6, BOT7, BOT8, BOT9
@@ -14,7 +14,7 @@ logging.basicConfig(format='[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s'
                     level=logging.WARNING)
 
 
-path = "Godfather/plugins/*.py"
+path = "KIGO/plugins/*.py"
 files = glob.glob(path)
 for name in files:
     with open(name) as a:
@@ -22,8 +22,8 @@ for name in files:
         plugin_name = patt.stem
         load_plugins(plugin_name.replace(".py", ""))
 
-print("🎉 Deadly Spam Bot Successfully Deployed 🎉 @Timesisnotwaiting")
-print("Enjoy! Do visit @Deadly_Spam_bot")
+print("🎉 KIGO Spam Bot Successfully Deployed 🎉 @Shubhanshutya")
+print("Enjoy! Do visit @godzilla_chatting")
 
 if __name__ == "__main__":
     BOT0.run_until_disconnected()
