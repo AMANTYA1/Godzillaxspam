@@ -17,7 +17,7 @@ logging.basicConfig(format='[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s'
 
 #version
 
-deadlyversion = "v0.2.0"
+Kigoversion = "v0.2.0"
 
 #values
 API_ID = config("API_ID", default=None, cast=int)
